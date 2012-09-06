@@ -1,0 +1,123 @@
+	body { 
+		margin: 0px 0px 0px 0px; 
+		}
+      img {border-width: 0;}
+      * {
+      	font-family:'Lucida Grande', sans-serif;
+      	}      
+      .claim{
+		font-family: 'Alex Brush', cursive;
+      	font-weight:normal;
+      	text-align:center;
+      	}
+       .titolo{
+		font-family: 'Quantico', sans-serif;
+		font-family: 'IM Fell Double Pica SC', serif;
+		
+      	}	
+      #custom-tweet-button a {
+		    display: block;
+		    padding: 2px 5px 2px 20px;
+		    background: url('https://twitter.com/favicons/favicon.ico') 1px center no-repeat;
+		    border: 0px solid #ccc;
+		    color:#4099FF;
+		    text-decoration:none;
+		    font-size:12px;
+		  }
+	     .bottone {
+		    display: block;
+		    padding: 2px 5px 2px 20px;
+		    background: url('https://twitter.com/favicons/favicon.ico') 1px center no-repeat;
+		    border: 0px solid #ccc;
+		    color:#4099FF;
+		    text-decoration:none;
+		    font-size:12px;
+		  }
+		#sopra{
+			background-color:#4099FF;
+		    color:#FFF;
+		    text-decoration:none;
+			width:100%;
+			height:40px;
+			top:0px;
+			text-align:center;
+			padding-top:10px;
+		}
+		#sopra h2{
+		 	margin: 0px auto;
+		}
+
+		#main{
+			margin:10px;
+		}
+		#contenitore{
+			width:100%; 
+			height:100%;
+			border:0px yellow solid;			
+		}
+		#listautenti{
+			width:12%;
+			min-width:180px; 
+			height:100%;
+			display:in-line;
+			float:left;
+			border:0px black solid;
+		}
+		.utentelista{
+			width:140px; 
+			height:50px; 
+			margin:15px;
+			padding:5px;
+			border:1px black solid;
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			-o-border-radius: 10px; 
+			border-radius: 10px;  
+		}
+		.utentelistadescr{
+			width:50px; 
+			height:50px;
+			display:in-line;
+			float:left;
+			line-height:10px;
+			font-size:10px;
+		}
+		#listaliste{
+			width:80%;
+			min-width:600px;
+			display:in-line;
+			float:left;
+			border:0px green solid;
+			margin-top:13px;
+		}
+		.lista{
+			width:200px; 
+			height:120px; 
+			border:1px blue solid;
+			color:blue;
+			text-align:center;
+			display:inline-block;
+			margin:2px;
+			position:relative;
+		}	
+		.lista-over{
+			width:200px; 
+			height:120px; 
+			border:1px red solid;
+			color: red;
+			text-align:center;
+			display:inline-block;
+			margin:2px;
+			position:relative;
+		}
+		.lista-out{
+			width:200px; 
+			height:120px; 
+			border:1px green solid;
+			color: green;
+			text-align:center;
+			display:inline-block;
+			margin:2px;
+			position:relative;
+		}	
+			
