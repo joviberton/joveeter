@@ -24,7 +24,7 @@ font-family: 'IM Fell Double Pica SC', serif;
 	
 	<meta property="og:title" content="This site SHOULD be a tool to manage you twitter list account" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="www.adimagemakers.it/www/index.php" />
+	<meta property="og:url" content="http://www.joviberton.com/joveeter" />
 	<meta property="og:image" content="http://html.net/avatar.png" />
 	<meta property="og:site_name" content="Joveeter List Manage" />
 	<meta property="fb:admins" content="" />
