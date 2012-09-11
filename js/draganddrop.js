@@ -13,8 +13,7 @@ $(function() {
                  $(this).removeClass('lista-over').addClass('lista');
                 },
                 drop: function(event,ui) {
-                  $("#listaliste").html("<h1>check</h1>");
-//                  $(this).removeClass('lista-over').addClass('lista');
+//                  $("#listaliste").html("<h1>check</h1>");
                   $("#listaliste").load("inserimento.php", { 'attori[]': [$(this).attr('id'), ui.draggable.attr('id')] }, function(){} );
                 }
         });
@@ -33,7 +32,6 @@ $(document).ready(function () {
                  $(this).removeClass('lista-over').addClass('lista');
                 },
                 drop: function(event,ui) {
-                  $("#listaliste").html("<h1>check</h1>");
                   $("#listaliste").load("inserimento.php", { 'attori[]': [$(this).attr('id'), ui.draggable.attr('id')] }, function(){} );
                 }
         });

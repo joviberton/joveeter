@@ -41,7 +41,7 @@ if (isset($_POST["attori"])){
 }		
 	// refresh
 $lists = lists($connection,$user->screen_name);
-echo '<div class="lista">'.date('d M y - H:i:s', time()).'<br />+<br />new list</div>';
+// echo '<div class="lista">'.date('d M y - H:i:s', time()).'<br />+<br />new list</div>';
 foreach ($lists->lists as $item){ 
 	echo '<div class="lista" id='.$item->id.'>';
 	echo $item->name."<br />";
