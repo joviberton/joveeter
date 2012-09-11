@@ -17,26 +17,28 @@ $connection = connessione(CONSUMER_KEY, CONSUMER_SECRET, $access_token);
 // se non già inserito inserisco
 
 $user = user($connection);
+
+if (isset($_POST["attori"])){	
+	$method = "users/show";
+	$option = array('user_id' => $_POST["attori"][1]); // $_POST["attori"][1]; // draggato
+	$draggato = ($connection->get($method, $option));
 	
-$method = "users/show";
-$option = array('user_id' => $_POST["attori"][1]); // $_POST["attori"][1]; // draggato
-$draggato = ($connection->get($method, $option));
+	$method = "lists/show";
+	$option = array('list_id' => $_POST["attori"][0], 'owner_id' => $user->id ); // $_POST["attori"][0]; // lista
+	$lista = ($connection->get($method, $option));
+	
+	$method = "lists/members/show";
+	$option = array('owner_id' => $user->id, 'list_id' => $lista->id, 'slug' => $lista->slug, 'user_id' => $draggato->id, 'screen_name' => $draggato->screen_name, 'include_entities' => 0,'skip_status' => 1);
+	$check = ($connection->get($method, $option));
+	
+	if ($draggato->screen_name == $check->screen_name){
+		echo "<h5>presente</h5>";
+		} else {
+		// inserisco 
+		echo "<h5>aggiunto</h5>";
+		}
 
-$method = "lists/show";
-$option = array('list_id' => $_POST["attori"][0], 'owner_id' => $user->id ); // $_POST["attori"][0]; // lista
-$lista = ($connection->get($method, $option));
-
-$method = "lists/members/show";
-$option = array('owner_id' => $user->id, 'list_id' => $lista->id, 'slug' => $lista->slug, 'user_id' => $draggato->id, 'screen_name' => $draggato->screen_name, 'include_entities' => 0,'skip_status' => 1);
-$check = ($connection->get($method, $option));
-
-if ($draggato->screen_name == $check->screen_name){
-	echo "<h5>presente</h5>";
-	} else {
-	// inserisco 
-	echo "<h5>aggiunto</h5>";
-	}
-		
+}		
 	// refresh
 $lists = lists($connection,$user->screen_name);
 echo '<div class="lista">'.date('d M y - H:i:s', time()).'<br />+<br />new list</div>';

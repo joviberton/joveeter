@@ -19,3 +19,7 @@ $(function() {
                 }
         });
 });
+
+$(document).ready(function () {
+   $("#listaliste").load("inserimento.php");
+});
