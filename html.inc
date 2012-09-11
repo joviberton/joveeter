@@ -71,21 +71,7 @@ font-family: 'IM Fell Double Pica SC', serif;
 		
 	       <div id="listaliste">
 	       
-	       <?php if(NOT){ ?>
-	       
-	       	 		<div class="lista"><br />+<br />new list</div>
-			       <?php  
-			       foreach ($lists->lists as $item){ ?>
-			       		<div class="lista" id="<?=$item->id?>"> 		
-							<?=$item->name?><br />
-							<?=$item->id?><br />
-							utenti <?=$item->member_count?>
-			 			</div>
-			 		<?php	}
-			 		?>
-			
-			<?php } ?> 		
-			 		
+	       			 		
 	 		</div>
  		</div>
        <?php 	} else { ?>
