@@ -21,13 +21,13 @@ aggiungo o meno.
 
 	* Attenzione *
 
-ATTUALMENTE non c'è la necessità di effettuare alcuna variazione nelle
-liste, per cui è sicuro fare i test con il proprio account.
+	ATTUALMENTE non c'è la necessità di effettuare alcuna variazione nelle
+	liste, per cui è sicuro fare i test con il proprio account.
 
 
 	* TODO *
 	
-- operazioni di push dentro 
-- lista utenti ajaxosa, per aggiornamento asincrono
-- dettagli su info utente, e info lista
-- possibilità di aggiungere una nuova lista
+	- operazioni di push dentro 
+	- lista utenti ajaxosa, per aggiornamento asincrono
+	- dettagli su info utente, e info lista
+	- possibilità di aggiungere una nuova lista
