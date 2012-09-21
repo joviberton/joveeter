@@ -1,10 +1,5 @@
-**********************************************************************
-**********************************************************************
 
 								Joveeter
-
-**********************************************************************
-**********************************************************************
 
 L'idea è un tool per gestire le liste del mio fottuto account Twitter.
 
@@ -23,9 +18,16 @@ l'utente.
 Effettuo controlli per verificare che l utente ci sia già e poi lo 
 aggiungo o meno.
 
+
 	* Attenzione *
 
 ATTUALMENTE non c'è la necessità di effettuare alcuna variazione nelle
 liste, per cui è sicuro fare i test con il proprio account.
 
---
+
+	* TODO *
+	
+- operazioni di push dentro 
+- lista utenti ajaxosa, per aggiornamento asincrono
+- dettagli su info utente, e info lista
+- possibilità di aggiungere una nuova lista
