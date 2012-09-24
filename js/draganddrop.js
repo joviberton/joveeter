@@ -10,13 +10,6 @@ _|"""""|_|"""""|_|"""""|_|"""""|_|"""""|_|"""""|_|"""""|_|"""""|
 
 
 
-
-
-
-
-
-
-
 */
 $(document).ready(function () { 
    $("#listaliste").load("inserimento.php",
@@ -41,5 +34,5 @@ $(document).ready(function () {
 });
 
 $(".pag").click(function() {
-	$("#listautenti").load("utenti.php", $(this).attr('id'));
+	$("#listautenti").load("inserimento.php", { 'pag[]': [$(this).attr('id')] } );
 });
