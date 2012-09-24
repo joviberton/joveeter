@@ -63,8 +63,8 @@ font-family: 'IM Fell Double Pica SC', serif;
 		 		</div> 		
 		 		<?php	} ?>
 	 
-	 		<a href="index.php?cursor=<?=$friends->previous_cursor?>"><<</a>
-	 		<a href="index.php?cursor=<?=$friends->next_cursor?>">>></a>
+	 		<a id="<?=$friends->previous_cursor?>"  href="#"> << </a>
+	 		<a id="<?=$friends->next_cursor?>" href="#"> >> </a>
 	 
 			</div>
 		
