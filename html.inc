@@ -57,7 +57,7 @@ Login and just <b>drag</b> a contact on a list <b>and drop</b> it to add to it. 
 <p>No data is stored in any way in this tool; it's all in your Twitter account.</p>
 
 
-<div style="margin:40px 200px;width:170px;display:block;"><a href="./redirect.php" target="_self"  class="bottone">Access with Tweeter</a></div>
+<div style="margin:40px 200px;width:170px;display:block;"><a href="./redirect.php" target="_self"  class="login">Access with Tweeter</a></div>
 
 </div>      	
       <?php	} ?>
