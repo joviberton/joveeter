@@ -38,6 +38,5 @@ aggiungo o meno.
 	* TODO *
 	
 	- operazioni di push dentro 
-	- lista utenti ajaxosa, per aggiornamento asincrono
 	- dettagli su info utente, e info lista
 	- possibilità di aggiungere una nuova lista
