@@ -12,7 +12,7 @@ _|"""""|_|"""""|_|"""""|_|"""""|_|"""""|_|"""""|_|"""""|_|"""""|
 
 */
 $(document).ready(function () { 
-   $("#listaliste").load("joveeter.php",{ 'pag[]': [-1] }
+   $("#listaliste").load("joveeter.php",{ 'pag[]': [-1] },
 	   function(){
 	        $(".utentelista").draggable({
 	                revert: true

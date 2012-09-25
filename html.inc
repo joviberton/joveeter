@@ -51,21 +51,7 @@ font-family: 'IM Fell Double Pica SC', serif;
        <?php if (isset($user)) {  ?>
        <div id="contenitore">
 	       <div id="listautenti">
-		 		<?php foreach ($friends->users as $item){ ?>
-		 		<div class="utentelista" id="<?=$item->id?>"> 		
-		 			<div style="width:50px; height:50px;float:left;">
-		 			 		<img src="<?=$item->profile_image_url?>" alt="<?=$item->name?> - <?=$item->screen_name?>" title="<?=$item->name?> - <?=$item->screen_name?>" height="48px" width="48px">
-		 			</div>
-		 			<div class="utentelistadescr">		 			 		
-					 		<?=$item->name?>
-					 		<p><i><?=$item->screen_name?></i></p>
-		 			</div>
-		 		</div> 		
-		 		<?php	} ?>
-	 
-	 		<a id="<?=$friends->previous_cursor?>"  href="#"> << </a>
-	 		<a id="<?=$friends->next_cursor?>" href="#"> >> </a>
-	 
+		 			 
 			</div>
 		
 		
