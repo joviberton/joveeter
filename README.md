@@ -30,7 +30,7 @@ aggiungo o meno.
 
 	* Attenzione *
 
-	ATTUALMENTE non c'è la necessità di effettuare alcuna variazione nelle
+	ATTUALMENTE essendo in fase dev, non c'è la necessità di effettuare alcuna scrittura nelle
 	liste, per cui è sicuro fare i test con il proprio account.
 
 
