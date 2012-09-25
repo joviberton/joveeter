@@ -36,17 +36,10 @@ font-family: 'IM Fell Double Pica SC', serif;
       <h2 class="titolo">Welcome to Joveeter List Manager</h2>
 	</div>
     <div id="main">
-      <h1 class="claim">Joveeter List Manager a tool to manage your twitter list account</h1>
-      
-      
-      
 		<div id="custom-tweet-button">
 			<?php bottone($user);  ?>
 		</div>
-      
-            
       <hr />
-
 
        <?php if (isset($user)) {  ?>
        <div id="contenitore">
@@ -54,6 +47,8 @@ font-family: 'IM Fell Double Pica SC', serif;
 	       <div id="listaliste"></div>
  		</div>
        <?php 	} else { ?>
+<h1 class="claim">Joveeter List Manager a tool to manage your twitter list account</h1>
+       
 <div style='margin:auto;width:600px;padding:40px;'>
 Welcome!<br />
 This is a tiny tool for manage your lists in your Twitter account <br />
