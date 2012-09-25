@@ -26,12 +26,12 @@ $connection = connessione(CONSUMER_KEY, CONSUMER_SECRET, $access_token);
 
 $user = user($connection);
 
-$friends = friends($connection, $_GET['cursor']);
+// $friends = friends($connection, $_GET['cursor']);
 
-$lists = lists($connection,$user->screen_name);
+// $lists = lists($connection,$user->screen_name);
 
 
-$content = $lists;
+// $content = $lists;
 
 /* Include HTML to display on the page */
 include('html.inc');

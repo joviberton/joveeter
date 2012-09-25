@@ -41,13 +41,31 @@ if (isset($_POST["attori"])){
 }		
 	// refresh
 $lists = lists($connection,$user->screen_name);
-// echo '<div class="lista">'.date('d M y - H:i:s', time()).'<br />+<br />new list</div>';
 foreach ($lists->lists as $item){ 
 	echo '<div class="lista" id='.$item->id.'>';
 	echo $item->name."<br />";
 	echo $item->id."<br />";
 	echo "utenti ".$item->member_count."</div>";
 	}
+// echo '<div class="lista">'.date('d M y - H:i:s', time()).'<br />+<br />new list</div>';
+
+	
+if (isset($_POST["pag"])){	
+	$friends = friends($connection, $_POST['pag'][0]);
+		foreach ($friends->users as $item){
+		echo '<div class="utentelista" id="'.$item->id.'"> 		
+		<div style="width:50px; height:50px;float:left;"><img src="'.$item->profile_image_url.'" alt="'.$item->name.' - '.$item->screen_name.'" 
+		title="'.$item->name.' - '.$item->screen_name.'" height="48px" width="48px">
+				</div>
+				<div class="utentelistadescr">		 			 		
+			 		'.$item->name.'
+			 		<p><i>'.$item->screen_name.'</i></p>
+				</div>
+			</div>';
+		}
+		echo '<a id="'.$friends->previous_cursor.'"  href="#"> << </a>';
+		echo '<a id="'.$friends->next_cursor.'" href="#"> >> </a>';	
+}	
 
 ?>
 
