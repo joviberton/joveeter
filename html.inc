@@ -33,15 +33,14 @@ font-family: 'IM Fell Double Pica SC', serif;
   </head>
   <body>
     <div id="sopra">
+
+		<div id="custom-tweet-button">
+			<?php bottone($user); ?>
+		</div>
+
       <h2 class="titolo">Welcome to Joveeter List Manager</h2>
 	</div>
     <div id="main">
-		<div id="custom-tweet-button">
-			<?php 
-				bottone($user);  
-			?>
-		</div>
-
 
        <?php if (isset($user)) {  ?>
        <div id="contenitore">
