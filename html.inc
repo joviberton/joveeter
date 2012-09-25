@@ -54,12 +54,12 @@ font-family: 'IM Fell Double Pica SC', serif;
 	       <div id="listaliste"></div>
  		</div>
        <?php 	} else { ?>
-    <p>
-      <pre>
-      	<?php print_r($content); ?>
-      </pre>
-    </p>
-      	
+<div style='margin:auto;width:600px;padding:40px;'>
+Welcome!<br />
+This is a tiny tool for manage your lists in your Twitter account <br />
+Login and just <b>drag</b> a contact on a list <b>and drop</b> it to add to it. That's all<br />
+<p>No data is stored in any way in this tool; it's all in your Twitter account.</p>
+</div>      	
       <?php	} ?>
 
   </body>
