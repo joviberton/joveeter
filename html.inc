@@ -37,9 +37,11 @@ font-family: 'IM Fell Double Pica SC', serif;
 	</div>
     <div id="main">
 		<div id="custom-tweet-button">
-			<?php bottone($user);  ?>
+			<?php 
+				bottone($user);  
+			?>
 		</div>
-      <hr />
+
 
        <?php if (isset($user)) {  ?>
        <div id="contenitore">
@@ -54,6 +56,10 @@ Welcome!<br />
 This is a tiny tool for manage your lists in your Twitter account <br />
 Login and just <b>drag</b> a contact on a list <b>and drop</b> it to add to it. That's all<br />
 <p>No data is stored in any way in this tool; it's all in your Twitter account.</p>
+
+
+<div style="margin:40px 200px;width:170px;display:block;"><a href="./redirect.php" target="_self"  class="bottone">Access with Tweeter</a></div>
+
 </div>      	
       <?php	} ?>
 

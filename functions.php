@@ -22,8 +22,9 @@ _|"""""|_|"""""|_|"""""|_|"""""|_|"""""|_|"""""|_|"""""|_|"""""|
 function bottone($user){
 			if (isset($user)) {  
 	       		echo '<a href="./clearsessions.php" target="_self" class="bottone">Disconnet @'.$user->screen_name.' from Tweeter</a>';
+	       		echo '<hr style="border:1px #e1e1e1 solid;" />';
 	      	} else { 
-	      		echo '<a href="./redirect.php" target="_self"  class="bottone">Access with Tweeter</a>';
+	      		// echo '<a href="./redirect.php" target="_self"  class="bottone">Access with Tweeter</a>';
 			 } 
 	}
 
