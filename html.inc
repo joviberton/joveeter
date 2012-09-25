@@ -33,10 +33,10 @@ font-family: 'IM Fell Double Pica SC', serif;
   </head>
   <body>
     <div id="sopra">
-      <h2 class="titolo">Welcome to Joveeter List Manager.</h2>
+      <h2 class="titolo">Welcome to Joveeter List Manager</h2>
 	</div>
     <div id="main">
-      <h1 class="claim">This site SHOULD, one day, be a tool to manage you twitter list account. </h1>
+      <h1 class="claim">Joveeter List Manager a tool to manage you twitter list account</h1>
       
       
       
