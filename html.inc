@@ -36,7 +36,7 @@ font-family: 'IM Fell Double Pica SC', serif;
       <h2 class="titolo">Welcome to Joveeter List Manager</h2>
 	</div>
     <div id="main">
-      <h1 class="claim">Joveeter List Manager a tool to manage you twitter list account</h1>
+      <h1 class="claim">Joveeter List Manager a tool to manage your twitter list account</h1>
       
       
       
