@@ -132,5 +132,12 @@
 			display:inline-block;
 			margin:2px;
 			position:relative;
-		}	
+		}
+		.pag {
+			width:80px;
+			height:70px;
+			color:#4099FF;
+			text-align:center;
+			display:inline-block;
+		}
 			
