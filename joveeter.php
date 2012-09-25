@@ -84,7 +84,7 @@ if (  $_POST['init'][0] == 1 ){	//init
 			</div>
 		</div>';
 	}
-	if ($friends->previous_cursor==0) {
+	if ($friends->previous_cursor!=0) {
 		echo '<a id="'.$friends->previous_cursor.'" class="pag" href="#"> << </a>';
 	}
 	echo '<a id="'.$friends->next_cursor.'" class="pag" href="#"> >> </a>';	
