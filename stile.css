@@ -17,13 +17,21 @@
 		font-family: 'Special Elite', cursive;
 		font-family: 'Codystar', cursive;
 		
-      	}	
-      #custom-tweet-button a {
+      	}
+		#custom-tweet-button {
+		    border: 0px;
+		    position:absolute;
+			 top:4px;
+			 right:4px;
+			 width:300px;
+			text-align:right;			 
+		  }	
+		 #custom-tweet-button .bottone {
 		    display: block;
-		    padding: 2px 5px 2px 20px;
-		    background: url('https://twitter.com/favicons/favicon.ico') 1px center no-repeat;
-		    border: 0px solid #ccc;
-		    color:#4099FF;
+		    padding: 2px;
+		    // background: url('https://twitter.com/favicons/favicon.ico') 1px right no-repeat;
+		    border: 0px;
+		    color:#fff;
 		    text-decoration:none;
 		    font-size:12px;
 		  }
