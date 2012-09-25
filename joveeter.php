@@ -42,10 +42,10 @@ if (isset($_POST["attori"])){
 	foreach ($lists->lists as $item){ 
 		echo '<div class="lista" id='.$item->id.'>';
 		echo $item->name.'<br />';
-		echo $item->id.'<br />';
-		echo 'utenti '.$item->member_count.'</div>';
+		echo '<small>(utenti '.$item->member_count.')</small></div>';
 		}
-	echo '<div class="lista">'.date('d M y - H:i:s', time()).'<br />+<br />new list</div>';
+	// echo '<div class="lista">'.date('d M y - H:i:s', time()).'<br />+<br />new list</div>';
+	echo '<div class="lista"><br />+<br />new list</div>';
 
 }		
 
@@ -94,10 +94,9 @@ if (  $_POST['init'][0] == 1 ){	//init
 	foreach ($lists->lists as $item){ 
 		echo '<div class="lista" id='.$item->id.'>';
 		echo $item->name.'<br />';
-		echo $item->id.'<br />';
-		echo 'utenti '.$item->member_count.'</div>';
+		echo '<small>(utenti '.$item->member_count.')</small></div>';
 		}
-	echo '<div class="lista">'.date('d M y - H:i:s', time()).'<br />+<br />new list</div>';
+	echo '<div class="lista"><br />+<br />new list</div>';
 
 	echo '</div>';		
 

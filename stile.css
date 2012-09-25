@@ -65,6 +65,7 @@
 			display:in-line;
 			float:left;
 			border:0px black solid;
+			z-index:998;
 		}
 		.utentelista{
 			width:140px; 
@@ -75,7 +76,8 @@
 			-webkit-border-radius: 10px;
 			-moz-border-radius: 10px;
 			-o-border-radius: 10px; 
-			border-radius: 10px;  
+			border-radius: 10px;
+			z-index:999;			  
 		}
 		.utentelistadescr{
 			width:50px; 
@@ -92,26 +94,33 @@
 			float:left;
 			border:0px green solid;
 			margin-top:13px;
+			z-index:0;
 		}
 		.lista{
 			width:200px; 
-			height:120px; 
-			border:1px blue solid;
-			color:blue;
+			height:120px;
+			border:0px blue solid;
+			background-color:white;
+			color:#4099FF;
 			text-align:center;
 			display:inline-block;
 			margin:2px;
 			position:relative;
+			top:60px;
+			z-index:0;
 		}	
 		.lista-over{
 			width:200px; 
-			height:120px; 
+			height:120px;
 			border:1px red solid;
-			color: red;
+			background-color:red;
+			color: white;
 			text-align:center;
 			display:inline-block;
 			margin:2px;
 			position:relative;
+			top:60px;
+			z-index:0;
 		}
 		.lista-out{
 			width:200px; 
