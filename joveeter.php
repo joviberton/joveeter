@@ -51,7 +51,10 @@ if (isset($_POST["attori"])){
 
 	
 if (isset($_POST['pag']) && ($_POST['pag'][0] != -1)){	
+	
 	$friends = friends($connection, $_POST['pag'][0]);
+	
+	
 		foreach ($friends->users as $item){
 		echo '<div class="utentelista" id="'.$item->id.'"> 		
 		<div style="width:50px; height:50px;float:left;"><img src="'.$item->profile_image_url.'" alt="'.$item->name.' - '.$item->screen_name.'" 
@@ -63,8 +66,10 @@ if (isset($_POST['pag']) && ($_POST['pag'][0] != -1)){
 				</div>
 			</div>';
 		}
+	echo '<a id="'.$friends->next_cursor.'" class="pag" href="#"> >> </a>';	
+	if ($friends->previous_cursor!=0) {
 		echo '<a id="'.$friends->previous_cursor.'" class="pag" href="#"> << </a>';
-		echo '<a id="'.$friends->next_cursor.'" class="pag" href="#"> >> </a>';	
+	}
 }	
 
 if (  $_POST['init'][0] == 1 ){	//init
@@ -84,10 +89,10 @@ if (  $_POST['init'][0] == 1 ){	//init
 			</div>
 		</div>';
 	}
+	echo '<a id="'.$friends->next_cursor.'" class="pag" href="#"> >> </a>';	
 	if ($friends->previous_cursor!=0) {
 		echo '<a id="'.$friends->previous_cursor.'" class="pag" href="#"> << </a>';
 	}
-	echo '<a id="'.$friends->next_cursor.'" class="pag" href="#"> >> </a>';	
 		
 	echo '</div>';
 	echo '<div id="listaliste">';
