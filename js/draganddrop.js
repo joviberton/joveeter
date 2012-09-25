@@ -12,7 +12,7 @@ _|"""""|_|"""""|_|"""""|_|"""""|_|"""""|_|"""""|_|"""""|_|"""""|
 
 */
 $(document).ready(function () { 
-   $("#listaliste").load("joveeter.php",{ 'pag[]': [-1] },
+   $("#contenitore").load("joveeter.php",{ 'init[]': [1] },
 	   function(){
 	        $(".utentelista").draggable({
 	                revert: true
@@ -29,10 +29,11 @@ $(document).ready(function () {
 		                  $("#listaliste").load("joveeter.php", { 'attori[]': [$(this).attr('id'), ui.draggable.attr('id')] }, function(){} );
 		                }
 			});
+			$(".pag").click(function() {
+				$("#listautenti").load("joveeter.php", { 'pag[]': [$(this).attr('id')] } );
+			});   
 		} //
-   );   
-});
+   );
+   
 
-$(".pag").click(function() {
-	$("#listautenti").load("joveeter.php", { 'pag[]': [$(this).attr('id')] } );
 });

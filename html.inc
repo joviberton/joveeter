@@ -50,15 +50,8 @@ font-family: 'IM Fell Double Pica SC', serif;
 
        <?php if (isset($user)) {  ?>
        <div id="contenitore">
-	       <div id="listautenti">
-		 			 
-			</div>
-		
-		
-	       <div id="listaliste">
-	       
-	       			 		
-	 		</div>
+	       <div id="listautenti"></div>
+	       <div id="listaliste"></div>
  		</div>
        <?php 	} else { ?>
     <p>
