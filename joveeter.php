@@ -32,10 +32,10 @@ if (isset($_POST["attori"])){
 	$check = ($connection->get($method, $option));
 	
 	if ($draggato->screen_name == $check->screen_name){
-		echo "<h5>presente</h5>";
+		echo '<h5 id="messaggio">presente</h5>';
 		} else {
 		// inserisco 
-		echo "<h5>aggiunto</h5>";
+		echo '<h5 id="messaggio">aggiunto</h5>';
 		}
 
 	$lists = lists($connection,$user->screen_name);

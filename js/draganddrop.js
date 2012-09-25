@@ -31,9 +31,8 @@ $(document).ready(function () {
 			});
 			$(".pag").click(function() {
 				$("#listautenti").load("joveeter.php", { 'pag[]': [$(this).attr('id')] } );
-			});   
+			});
 		} //
    );
-   
 
 });
