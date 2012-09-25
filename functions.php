@@ -1,3 +1,4 @@
+<?php 
 /*
 
 
@@ -17,8 +18,7 @@ _|"""""|_|"""""|_|"""""|_|"""""|_|"""""|_|"""""|_|"""""|_|"""""|
 
 
 
-*/<?php 
-
+*/
 function bottone($user){
 			if (isset($user)) {  
 	       		echo '<a href="./clearsessions.php" target="_self" class="bottone">Disconnet @'.$user->screen_name.' from Tweeter</a>';
