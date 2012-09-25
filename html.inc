@@ -5,7 +5,7 @@
     <title>Joveeter List Manager</title>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 	<link rel='stylesheet' href='stile.css' type='text/css' media='screen' />
-	<link href='http://fonts.googleapis.com/css?family=Alex+Brush|Quantico|IM+Fell+Double+Pica+SC|Flamenco|Special+Elite' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Alex+Brush|Quantico|IM+Fell+Double+Pica+SC|Flamenco|Special+Elite|Codystar' rel='stylesheet' type='text/css'>
 	<link type="text/css" href="css/smoothness/jquery-ui-1.8.23.custom.css" rel="stylesheet" />
 	<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
 	<script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
